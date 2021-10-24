@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/frontend-interview-task-api
 /.pnp
 .pnp.js
 
