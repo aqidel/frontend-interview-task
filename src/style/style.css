@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  margin: 41px 48px;
+}
+
+h1 {
+  margin-bottom: 40px;
+
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.input-wrap {
+  display: flex;
+}
+
+.input-left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+  border-right-style: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-sizing: border-box;
+  width: 37px;
+}
+
+input {
+  border: 1px solid #EBEBEB;
+  border-left-style: none;
+  border-right-style: none;
+  box-sizing: border-box;
+  width: 835px;
+  height: 45px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #D1D1D1;
+}
+
+.input-right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+  border-left-style: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box;
+  width: 91px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #D1D1D1;
+}
