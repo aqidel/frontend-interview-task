@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 body {
   margin: 41px 48px;
@@ -37,7 +37,9 @@ input {
   box-sizing: border-box;
   width: 835px;
   height: 45px;
+}
 
+input::placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;

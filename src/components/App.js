@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import Table from './Table';
 import search_logo from '../assets/Vector.png';
+import '../style/App.css';
 
-function App() {
+function App(props) {
+  const [state, setState] = useState(props.row);
+
   return (
     <>
       <h1>Dashboard</h1>
@@ -14,7 +18,7 @@ function App() {
           <span>7 tests</span>
         </div>
       </div>
-      <Table/>
+      <Table rows={state}/>
     </>
   );
 };

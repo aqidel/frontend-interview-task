@@ -1,16 +1,4 @@
-import { useState } from 'react';
-
-async function getData(url) {
-  let response = await fetch(url);
-  let json = await response.json();
-};
-
-getData('http://localhost:3100/tests');
-
-function Table() {
-  const [tests, setTests] = useState();
-  const [sites, setSites] = useState();
-
+function Table(props) {
   return (
     <table>
       <thead>
@@ -23,7 +11,17 @@ function Table() {
         </tr>
       </thead>
       <tbody>
-        {}
+        {props.rows.map((row, i) => {
+          return (
+            <tr key={i}>
+              <td>{row.name}</td>
+              <td>{row.type}</td>
+              <td>{row.status}</td>
+              <td>{row.site}</td>
+              <td>BTN</td>
+            </tr>
+          )
+        })}
       </tbody>
     </table>
   );
