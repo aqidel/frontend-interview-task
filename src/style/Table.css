@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+table {
+  border-spacing: 0;
+  margin-top: 30px;
+  width: 954px;
+}
+
+thead td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+}
+
+.spacer {
+  height: 5px;
+}
+
+.row {
+  background: #FFFFFF;
+  height: 70px;
+}
+
+.row td {
+  padding: 0;
+}
+
+.colored {
+  box-sizing: border-box;
+  border-left-style: solid;
+  border-left-color: #474747; /* default color */
+  border-left-width: 4px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 0;
+  padding: 0;
+}
+
+.delivery {
+  border-left-color: #C2C2FF;
+}
+
+.games {
+  border-left-color: #8686FF;
+}
+
+.market {
+  border-left-color: #E14165;
+}
+
+.td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #474747;
+}
+
+.online {
+  color: #1BDA9D;
+}
+
+.paused {
+  color: #FF8346;
+}
+
+.stopped {
+  color: #FE4848;
+}
