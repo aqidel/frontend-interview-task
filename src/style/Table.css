@@ -15,6 +15,15 @@ thead td {
   color: #999999;
 }
 
+#type-sort {
+  display: flex;
+  align-items: center;
+}
+
+#type-sort img {
+  margin-left: 8px;
+}
+
 .spacer {
   height: 5px;
 }
@@ -22,10 +31,6 @@ thead td {
 .row {
   background: #FFFFFF;
   height: 70px;
-}
-
-.row td {
-  padding: 0;
 }
 
 .colored {
@@ -52,12 +57,27 @@ thead td {
 }
 
 .td {
+  box-sizing: border-box;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
   color: #474747;
+  padding: 0;
+}
+
+.name {
+  width: 429px;
+  padding-left: 15px;
+}
+
+.type {
+  width: 125px;
+}
+
+.status {
+  width: 116px;
 }
 
 .online {
@@ -70,4 +90,18 @@ thead td {
 
 .stopped {
   color: #FE4848;
+}
+
+.site {
+  width: 177px;
+}
+
+.td-button {
+  box-sizing: border-box;
+  border-right-style: solid;
+  border-right-color: #FFFFFF;
+  border-right-width: 1px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 0;
 }

@@ -2,31 +2,24 @@ import React from 'react';
 import Results from './Results';
 import Finalize from './Finalize';
 import '../style/Table.css';
+import sort_logo from '../assets/Vector-1.png';
 
 function defineSiteColor(site) {
-  if (site == 'delivery.company.com') {
-    return 'colored delivery';
+  switch (site) {
+    case 'delivery.company.com': return 'colored delivery';
+    case 'games.company.com': return 'colored games';
+    case 'market.company.com': return 'colored market';
+    default: return 'colored';
   }
-  if (site == 'games.company.com') {
-    return 'colored games';
-  }
-  if (site == 'market.company.com') {
-    return 'colored market';
-  }
-  else return 'colored';
 };
 
 function defineStatusColor(status) {
-  if (status == 'Online') {
-    return 'td online';
+  switch (status) {
+    case 'Online': return 'td status online';
+    case 'Paused': return 'td status paused';
+    case 'Stopped': return 'td status stopped';
+    default: return 'td status';
   }
-  if (status == 'Paused') {
-    return 'td paused';
-  }
-  if (status == 'Stopped') {
-    return 'td stopped';
-  }
-  else return 'td'
 };
 
 function Table(props) {
@@ -36,7 +29,10 @@ function Table(props) {
         <tr>
           <td></td>
           <td>NAME</td>
-          <td>TYPE</td>
+          <td id='type-sort'>
+            TYPE
+            <img src={sort_logo} alt='vector'/>
+          </td>
           <td>STATUS</td>
           <td>SITE</td>
           <td></td>
@@ -49,11 +45,19 @@ function Table(props) {
               <tr className='spacer'></tr>
               <tr className='row'>
                 <td className={defineSiteColor(row.site)}></td>
-                <td className='td'>{row.name}</td>
-                <td className='td'>{row.type}</td>
-                <td className={defineStatusColor(row.status)}>{row.status}</td>
-                <td className='td'>{row.site}</td>
-                <td>
+                <td className='td name'>
+                  {row.name}
+                </td>
+                <td className='td type'>
+                  {row.type}
+                </td>
+                <td className={defineStatusColor(row.status)}>
+                  {row.status}
+                </td>
+                <td className='td site'>
+                  {row.site}
+                </td>
+                <td className='td-button'>
                   {row.status === 'Draft' ? <Finalize/> : <Results/>}
                 </td>
               </tr>

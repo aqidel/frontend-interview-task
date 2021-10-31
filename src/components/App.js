@@ -11,7 +11,7 @@ function App(props) {
       <h1>Dashboard</h1>
       <div className='input-wrap'>
         <div className='input-left-side'>
-          <img src={search_logo} alt='vector'></img>
+          <img src={search_logo} alt='vector'/>
         </div>
         <input placeholder='What test are you looking for?'></input>
         <div className='input-right-side'>
